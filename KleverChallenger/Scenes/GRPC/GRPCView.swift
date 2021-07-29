@@ -9,7 +9,17 @@ import SwiftUI
 
 struct GRPCView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                Text("""
+            Não encontrei um servidor gRPC free disponível na internet para fazer a integração! Por isso fiz um exemplo simples de consumos usando Rest, disponível na Tab Central!
+            
+            Mas não teria muito segredo, eu iria adicionar a instancia do "Client" (gRPC) no Repository da Cena e consumiria Ele, similar ao exemplo do Rest que consome uma instancia do Service.
+            """)
+                
+            }
+            .navigationTitle("gRPC")
+        }
     }
 }
 
