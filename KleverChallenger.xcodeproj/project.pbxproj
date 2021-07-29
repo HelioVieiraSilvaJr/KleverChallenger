@@ -19,6 +19,12 @@
 		BD6406E426B241D300CFEB61 /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406E226B241D300CFEB61 /* Contact+CoreDataClass.swift */; };
 		BD6406E526B241D300CFEB61 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406E326B241D300CFEB61 /* Contact+CoreDataProperties.swift */; };
 		BDC4DCAF26B253A000830D81 /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4DCAE26B253A000830D81 /* AddContactView.swift */; };
+		BDC4DCB726B26A9E00830D81 /* NetworkLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4DCB626B26A9E00830D81 /* NetworkLite.swift */; };
+		BDC4DCB926B26B6400830D81 /* RestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4DCB826B26B6400830D81 /* RestRepository.swift */; };
+		BDC4DCBC26B26B9500830D81 /* RestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4DCBB26B26B9500830D81 /* RestService.swift */; };
+		BDC4DCBF26B26BD700830D81 /* CepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4DCBE26B26BD700830D81 /* CepModel.swift */; };
+		BDC4DCC126B26C9A00830D81 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4DCC026B26C9A00830D81 /* APIError.swift */; };
+		BDC4DCC326B26F8D00830D81 /* RestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4DCC226B26F8D00830D81 /* RestViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		BD6406E226B241D300CFEB61 /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BD6406E326B241D300CFEB61 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BDC4DCAE26B253A000830D81 /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
+		BDC4DCB626B26A9E00830D81 /* NetworkLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLite.swift; sourceTree = "<group>"; };
+		BDC4DCB826B26B6400830D81 /* RestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestRepository.swift; sourceTree = "<group>"; };
+		BDC4DCBB26B26B9500830D81 /* RestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestService.swift; sourceTree = "<group>"; };
+		BDC4DCBE26B26BD700830D81 /* CepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CepModel.swift; sourceTree = "<group>"; };
+		BDC4DCC026B26C9A00830D81 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		BDC4DCC226B26F8D00830D81 /* RestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 		BD6406C226B23CC400CFEB61 /* KleverChallenger */ = {
 			isa = PBXGroup;
 			children = (
+				BDC4DCB526B26A4900830D81 /* Sources */,
 				BD6406D726B23E3300CFEB61 /* Scenes */,
 				BD6406C326B23CC400CFEB61 /* KleverChallengerApp.swift */,
 				BD6406C726B23CC500CFEB61 /* Assets.xcassets */,
@@ -120,6 +133,10 @@
 		BD6406DA26B23E8300CFEB61 /* Rest */ = {
 			isa = PBXGroup;
 			children = (
+				BDC4DCBD26B26BC700830D81 /* Model */,
+				BDC4DCBB26B26B9500830D81 /* RestService.swift */,
+				BDC4DCB826B26B6400830D81 /* RestRepository.swift */,
+				BDC4DCC226B26F8D00830D81 /* RestViewModel.swift */,
 				BD6406DE26B23EAD00CFEB61 /* RestView.swift */,
 			);
 			path = Rest;
@@ -147,6 +164,23 @@
 				BDC4DCAE26B253A000830D81 /* AddContactView.swift */,
 			);
 			path = AddContact;
+			sourceTree = "<group>";
+		};
+		BDC4DCB526B26A4900830D81 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BDC4DCB626B26A9E00830D81 /* NetworkLite.swift */,
+				BDC4DCC026B26C9A00830D81 /* APIError.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		BDC4DCBD26B26BC700830D81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDC4DCBE26B26BD700830D81 /* CepModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,16 +252,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDC4DCBF26B26BD700830D81 /* CepModel.swift in Sources */,
 				BD6406CD26B23CC500CFEB61 /* Persistence.swift in Sources */,
+				BDC4DCBC26B26B9500830D81 /* RestService.swift in Sources */,
 				BD6406C626B23CC400CFEB61 /* TabbarBase.swift in Sources */,
 				BD6406C426B23CC400CFEB61 /* KleverChallengerApp.swift in Sources */,
 				BDC4DCAF26B253A000830D81 /* AddContactView.swift in Sources */,
 				BD6406E526B241D300CFEB61 /* Contact+CoreDataProperties.swift in Sources */,
 				BD6406DD26B23EA400CFEB61 /* CoredataView.swift in Sources */,
+				BDC4DCC326B26F8D00830D81 /* RestViewModel.swift in Sources */,
 				BD6406E126B23EB900CFEB61 /* GRPCView.swift in Sources */,
 				BD6406DF26B23EAD00CFEB61 /* RestView.swift in Sources */,
 				BD6406E426B241D300CFEB61 /* Contact+CoreDataClass.swift in Sources */,
 				BD6406D026B23CC500CFEB61 /* KleverChallenger.xcdatamodeld in Sources */,
+				BDC4DCB726B26A9E00830D81 /* NetworkLite.swift in Sources */,
+				BDC4DCC126B26C9A00830D81 /* APIError.swift in Sources */,
+				BDC4DCB926B26B6400830D81 /* RestRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
