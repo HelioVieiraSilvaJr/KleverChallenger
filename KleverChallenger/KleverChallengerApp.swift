@@ -13,7 +13,7 @@ struct KleverChallengerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabbarBase()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

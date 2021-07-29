@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		BD6406C426B23CC400CFEB61 /* KleverChallengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406C326B23CC400CFEB61 /* KleverChallengerApp.swift */; };
-		BD6406C626B23CC400CFEB61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406C526B23CC400CFEB61 /* ContentView.swift */; };
+		BD6406C626B23CC400CFEB61 /* TabbarBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406C526B23CC400CFEB61 /* TabbarBase.swift */; };
 		BD6406C826B23CC500CFEB61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6406C726B23CC500CFEB61 /* Assets.xcassets */; };
 		BD6406CB26B23CC500CFEB61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6406CA26B23CC500CFEB61 /* Preview Assets.xcassets */; };
 		BD6406CD26B23CC500CFEB61 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406CC26B23CC500CFEB61 /* Persistence.swift */; };
 		BD6406D026B23CC500CFEB61 /* KleverChallenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD6406CE26B23CC500CFEB61 /* KleverChallenger.xcdatamodeld */; };
+		BD6406DD26B23EA400CFEB61 /* CoredataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406DC26B23EA400CFEB61 /* CoredataView.swift */; };
+		BD6406DF26B23EAD00CFEB61 /* RestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406DE26B23EAD00CFEB61 /* RestView.swift */; };
+		BD6406E126B23EB900CFEB61 /* GRPCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406E026B23EB900CFEB61 /* GRPCView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD6406C026B23CC400CFEB61 /* KleverChallenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KleverChallenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6406C326B23CC400CFEB61 /* KleverChallengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleverChallengerApp.swift; sourceTree = "<group>"; };
-		BD6406C526B23CC400CFEB61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BD6406C526B23CC400CFEB61 /* TabbarBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarBase.swift; sourceTree = "<group>"; };
 		BD6406C726B23CC500CFEB61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD6406CA26B23CC500CFEB61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD6406CC26B23CC500CFEB61 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		BD6406CF26B23CC500CFEB61 /* KleverChallenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KleverChallenger.xcdatamodel; sourceTree = "<group>"; };
 		BD6406D126B23CC500CFEB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD6406DC26B23EA400CFEB61 /* CoredataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataView.swift; sourceTree = "<group>"; };
+		BD6406DE26B23EAD00CFEB61 /* RestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestView.swift; sourceTree = "<group>"; };
+		BD6406E026B23EB900CFEB61 /* GRPCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRPCView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,8 @@
 		BD6406C226B23CC400CFEB61 /* KleverChallenger */ = {
 			isa = PBXGroup;
 			children = (
+				BD6406D726B23E3300CFEB61 /* Scenes */,
 				BD6406C326B23CC400CFEB61 /* KleverChallengerApp.swift */,
-				BD6406C526B23CC400CFEB61 /* ContentView.swift */,
 				BD6406C726B23CC500CFEB61 /* Assets.xcassets */,
 				BD6406CC26B23CC500CFEB61 /* Persistence.swift */,
 				BD6406D126B23CC500CFEB61 /* Info.plist */,
@@ -73,6 +79,49 @@
 				BD6406CA26B23CC500CFEB61 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD6406D726B23E3300CFEB61 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BD6406D826B23E3800CFEB61 /* TabbarBase */,
+				BD6406D926B23E7900CFEB61 /* Coredata */,
+				BD6406DA26B23E8300CFEB61 /* Rest */,
+				BD6406DB26B23E8800CFEB61 /* GRPC */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BD6406D826B23E3800CFEB61 /* TabbarBase */ = {
+			isa = PBXGroup;
+			children = (
+				BD6406C526B23CC400CFEB61 /* TabbarBase.swift */,
+			);
+			path = TabbarBase;
+			sourceTree = "<group>";
+		};
+		BD6406D926B23E7900CFEB61 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				BD6406DC26B23EA400CFEB61 /* CoredataView.swift */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		BD6406DA26B23E8300CFEB61 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				BD6406DE26B23EAD00CFEB61 /* RestView.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		BD6406DB26B23E8800CFEB61 /* GRPC */ = {
+			isa = PBXGroup;
+			children = (
+				BD6406E026B23EB900CFEB61 /* GRPCView.swift */,
+			);
+			path = GRPC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD6406CD26B23CC500CFEB61 /* Persistence.swift in Sources */,
-				BD6406C626B23CC400CFEB61 /* ContentView.swift in Sources */,
+				BD6406C626B23CC400CFEB61 /* TabbarBase.swift in Sources */,
 				BD6406C426B23CC400CFEB61 /* KleverChallengerApp.swift in Sources */,
+				BD6406DD26B23EA400CFEB61 /* CoredataView.swift in Sources */,
+				BD6406E126B23EB900CFEB61 /* GRPCView.swift in Sources */,
+				BD6406DF26B23EAD00CFEB61 /* RestView.swift in Sources */,
 				BD6406D026B23CC500CFEB61 /* KleverChallenger.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
