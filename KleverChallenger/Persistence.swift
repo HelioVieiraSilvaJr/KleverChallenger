@@ -13,9 +13,12 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+        for index in 0..<10 {
+            let newContact = Contact(context: viewContext)
+            newContact.id = UUID()
+            newContact.name = "Helio Vieira \(index)"
+            newContact.cellphone = "(11) 96619-199\(index)"
+            newContact.isFavorite = (index % 2 == 0)
         }
         do {
             try viewContext.save()

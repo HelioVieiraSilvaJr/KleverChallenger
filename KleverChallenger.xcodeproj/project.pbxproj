@@ -16,6 +16,9 @@
 		BD6406DD26B23EA400CFEB61 /* CoredataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406DC26B23EA400CFEB61 /* CoredataView.swift */; };
 		BD6406DF26B23EAD00CFEB61 /* RestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406DE26B23EAD00CFEB61 /* RestView.swift */; };
 		BD6406E126B23EB900CFEB61 /* GRPCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406E026B23EB900CFEB61 /* GRPCView.swift */; };
+		BD6406E426B241D300CFEB61 /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406E226B241D300CFEB61 /* Contact+CoreDataClass.swift */; };
+		BD6406E526B241D300CFEB61 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6406E326B241D300CFEB61 /* Contact+CoreDataProperties.swift */; };
+		BDC4DCAD26B24A3200830D81 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC4DCAC26B24A3200830D81 /* ContactCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		BD6406DC26B23EA400CFEB61 /* CoredataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataView.swift; sourceTree = "<group>"; };
 		BD6406DE26B23EAD00CFEB61 /* RestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestView.swift; sourceTree = "<group>"; };
 		BD6406E026B23EB900CFEB61 /* GRPCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRPCView.swift; sourceTree = "<group>"; };
+		BD6406E226B241D300CFEB61 /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BD6406E326B241D300CFEB61 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BDC4DCAC26B24A3200830D81 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,8 @@
 		BD6406B726B23CC400CFEB61 = {
 			isa = PBXGroup;
 			children = (
+				BD6406E226B241D300CFEB61 /* Contact+CoreDataClass.swift */,
+				BD6406E326B241D300CFEB61 /* Contact+CoreDataProperties.swift */,
 				BD6406C226B23CC400CFEB61 /* KleverChallenger */,
 				BD6406C126B23CC400CFEB61 /* Products */,
 			);
@@ -103,6 +111,7 @@
 		BD6406D926B23E7900CFEB61 /* Coredata */ = {
 			isa = PBXGroup;
 			children = (
+				BDC4DCAB26B24A1B00830D81 /* subviews */,
 				BD6406DC26B23EA400CFEB61 /* CoredataView.swift */,
 			);
 			path = Coredata;
@@ -122,6 +131,14 @@
 				BD6406E026B23EB900CFEB61 /* GRPCView.swift */,
 			);
 			path = GRPC;
+			sourceTree = "<group>";
+		};
+		BDC4DCAB26B24A1B00830D81 /* subviews */ = {
+			isa = PBXGroup;
+			children = (
+				BDC4DCAC26B24A3200830D81 /* ContactCell.swift */,
+			);
+			path = subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,12 +210,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDC4DCAD26B24A3200830D81 /* ContactCell.swift in Sources */,
 				BD6406CD26B23CC500CFEB61 /* Persistence.swift in Sources */,
 				BD6406C626B23CC400CFEB61 /* TabbarBase.swift in Sources */,
 				BD6406C426B23CC400CFEB61 /* KleverChallengerApp.swift in Sources */,
+				BD6406E526B241D300CFEB61 /* Contact+CoreDataProperties.swift in Sources */,
 				BD6406DD26B23EA400CFEB61 /* CoredataView.swift in Sources */,
 				BD6406E126B23EB900CFEB61 /* GRPCView.swift in Sources */,
 				BD6406DF26B23EAD00CFEB61 /* RestView.swift in Sources */,
+				BD6406E426B241D300CFEB61 /* Contact+CoreDataClass.swift in Sources */,
 				BD6406D026B23CC500CFEB61 /* KleverChallenger.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
